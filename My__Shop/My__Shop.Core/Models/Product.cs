@@ -17,7 +17,7 @@ namespace My__Shop.Core.Models
         public string Name { get; set; }
         public string Description { get; set; }
 
-        [Range(0,1000)]
+        [Range(0,5000)]
         public decimal Price { get; set; }
         public string Category { get; set; } //to group the products by different categories
         public string Image { get; set; }  //URL for product image
