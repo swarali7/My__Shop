@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace My__Shop.Core.Models
 {
-    public class Product //in order to be accessed by other projects in the solution shift to public
+    public class Product : BaseEntity//in order to be accessed by other projects in the solution shift to public
     {
-        public string Id { get; set; }
+    
 
         [StringLength(20)] //Quick actions to add Data Annotations
         [DisplayName("Product Name")]  //Quick Actions to add using System.component Model
@@ -22,10 +22,7 @@ namespace My__Shop.Core.Models
         public string Category { get; set; } //to group the products by different categories
         public string Image { get; set; }  //URL for product image
 
-        public Product()
-        {
-            this.Id = Guid.NewGuid().ToString();
-        }
+ 
 
     }
 }
