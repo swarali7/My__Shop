@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Web;
 namespace My__Shop.Core.Contracts
 {
     public interface IBasketService
@@ -16,7 +16,6 @@ namespace My__Shop.Core.Contracts
         List<BasketItemViewModel> GetBasketItems(HttpContextBase httpContext);
 
         BasketSummaryViewModel GetBasketSummary(HttpContextBase httpContext);
-
-
+        
     }
 }

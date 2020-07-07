@@ -9,7 +9,7 @@ namespace My__Shop.Core.ViewModels
     public class BasketSummaryViewModel
     {
         public int BasketCount { get; set; }
-        public decimal BasketTotal   { get; set; }
+        public decimal BasketTotal { get; set; }
         public BasketSummaryViewModel()
         {
 
@@ -20,4 +20,5 @@ namespace My__Shop.Core.ViewModels
             this.BasketCount = baksetCount;
             this.BasketTotal = basketTotal;
         }
+    }
 }

@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using HttpContextBase = System.Web.HttpContextBase;
+
+
 
 namespace My__Shop.Services
 {
@@ -160,24 +161,5 @@ namespace My__Shop.Services
             }
         }
 
-        public void AddToBasket(Core.Contracts.HttpContextBase httpContext, string productId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveFromBasket(Core.Contracts.HttpContextBase httpContext, string itemId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<BasketItemViewModel> GetBasketItems(Core.Contracts.HttpContextBase httpContext)
-        {
-            throw new NotImplementedException();
-        }
-
-        public BasketSummaryViewModel GetBasketSummary(Core.Contracts.HttpContextBase httpContext)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
